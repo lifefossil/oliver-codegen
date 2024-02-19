@@ -1,5 +1,5 @@
 import logging
-from src.core.params import pyproject_toml_params
+from oliver_codegen.core.params import pyproject_toml_params
 
 """
 Python logging 模块, 主要包括四个组件:
@@ -118,7 +118,7 @@ consoleHandler.setLevel(level=logging.DEBUG if pyproject_toml_params.debug else 
 
 # formatter 格式
 # %(levelname)-8s 中的 -8 表示, 左对齐, 占8位字符
-formatter = logging.Formatter('%(levelname)-8s::%(asctime)s ::: %(message)s', datefmt="%Y-%m-%d %H:%M:%S")
+formatter = logging.Formatter('%(levelname)s::%(message)s')
 
 # 过滤器
 # flt = logging.Filter(__name__)

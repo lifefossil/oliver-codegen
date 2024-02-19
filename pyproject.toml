@@ -1,18 +1,22 @@
 [tool.poetry]
-name = "codegen"
-version = "0.1.1"
+name = "oliver-codegen"
+version = "0.1.4"
 description = "项目代码框架快速生成脚手架"
 authors = ["oliver <lifefossil@outlook.com>"]
 readme = "README.md"
 packages = [
-    {include = "src"}
+    {include = "oliver_codegen"},
 ]
 
+include = ["pyproject.toml"]
+
 [tool.poetry.dependencies]
-python = ">=3.11,<3.13"
+python = ">=3.11"
+gitpython = "^3.1.42"
+pyyaml = "^6.0.1"
 
 [tool.poetry.scripts]
-codegen = 'src.main:start'
+codegen = 'oliver_codegen.main:start'
 
 # 测试依赖
 [tool.poetry.group.test.dependencies]
@@ -23,9 +27,6 @@ pytest = "^8.0.0"
 pythonpath = "."
 addopts = ["-v", "-s", "--import-mode=importlib"]
 
-# 开发依赖
-[tool.poetry.group.dev.dependencies]
-pyinstaller = "^6.3.0"
 
 # 日志配置
 [logging]
@@ -33,7 +34,7 @@ enable_file_log = false
 file_log_location = "."
 
 [project]
-debug = true
+debug = false
 
 [build-system]
 requires = ["poetry-core"]
