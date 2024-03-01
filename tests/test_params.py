@@ -1,6 +1,6 @@
 import logging
 
-from oliver_codegen.core.params import pyproject_toml_params, PYPROJECT_TOML_PATH
+from oliver_codegen import pyproject_toml_params, PYPROJECT_TOML_PATH
 import tomllib
 
 

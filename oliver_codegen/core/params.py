@@ -3,10 +3,10 @@ import tomllib
 from pathlib import Path
 
 # 项目根目录路径
-PROJECT_ROOT_PATH: Path = Path(__file__).parent.parent.parent
+PACKAGE_DIR: Path = Path(__file__).parent.parent
 
 # pyproject.toml 默认路径
-PYPROJECT_TOML_PATH: Path = PROJECT_ROOT_PATH.joinpath("pyproject.toml")
+PYPROJECT_TOML_PATH: Path = PACKAGE_DIR.joinpath("conf").joinpath("pyproject.toml")
 
 
 class PyprojectTomlParams:
@@ -26,9 +26,9 @@ class PyprojectTomlParams:
         with open(self.pyproject_toml_path, 'rb') as fb:
             self.pyproject_toml_dict = tomllib.load(fb)
             try:
-                self.project_name = self.pyproject_toml_dict.get("tool").get("poetry").get("name", "")
-                self.description = self.pyproject_toml_dict.get("tool").get("poetry").get("description", "")
-                self.version = self.pyproject_toml_dict.get("tool").get("poetry").get("version", "")
+                self.project_name = self.pyproject_toml_dict.get("name", "")
+                self.description = self.pyproject_toml_dict.get("description", "")
+                self.version = self.pyproject_toml_dict.get("version", "")
                 self.debug = self.pyproject_toml_dict.get("project", {}).get("debug", False)
             except KeyError as e:
                 logging.warning("解析 pyproject.toml 参数失败, 将使用默认值.", e)

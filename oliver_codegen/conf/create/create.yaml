@@ -13,6 +13,9 @@ template:
   # tkinter 模板
   tkinter:
     repository: "https://github.com/lifefossil/template-tkinter.git"
+  # Django + Tailwind 模板
+  django-tailwind:
+    repository: "https://github.com/lifefossil/template-django-tailwind.git"
 
 # vue 项目
   # vue-tailwindcss

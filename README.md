@@ -6,7 +6,10 @@ oliver-codegen 是一款快速构建项目基础框架的脚手架工具. 其原
 ```bash
 $ pipx install oliver-codegen
 ```
-
+通常第一次使用 `pipx` 安装可执行程序时候, 可执行程序并没有自动添加到系统全局变量中, 导致在命令行无法使用. 这时候可以使用下面命令解决:
+```bash
+$ pipx ensurepath
+```
 
 ## 使用方式
 ```bash
@@ -26,7 +29,7 @@ $ codegen list template
 ```bash
 $ pipx upgrade oliver-codegen
 ```
-
+如果你使用了国内镜像源, 可能存在同步问题, 无法更新到最新版本. 可以使用命令 `pipx upgrade oliver-codegen -i https://pypi.org/simple/`
 
 ## 卸载程序
 ```bash

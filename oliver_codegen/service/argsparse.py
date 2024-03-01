@@ -6,7 +6,6 @@ from git import Repo
 from yaml import safe_load
 
 from oliver_codegen.core.log import logger
-from oliver_codegen.core.params import PROJECT_ROOT_PATH
 from oliver_codegen.core.params import pyproject_toml_params
 from oliver_codegen.util.error import error_exit
 from oliver_codegen.util.file_folder_util import handle_read_only_error
@@ -116,10 +115,11 @@ class HandleArgs:
 
 def get_templates() -> dict:
     # 模板名称和仓库映射文件路径
-    template_repositories_path = PROJECT_ROOT_PATH.joinpath("oliver_codegen").joinpath("templates").joinpath("create").joinpath("create.yaml")
+    template_repositories_path = (Path(__file__).parent.parent.
+                                  joinpath("conf").joinpath("create").joinpath("create.yaml"))
     # 解析文件成字典
     try:
         with open(template_repositories_path, 'r', encoding='utf-8') as f:
             return safe_load(f)['template']
     except Exception as e:
-        logger.error("获取仓库映射 <create.yaml> 文件错误", e)
+        error_exit("获取仓库映射 <create.yaml> 文件错误", e)
