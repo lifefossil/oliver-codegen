@@ -4,18 +4,28 @@ template:
   # python 基本模板
   python:
     repository: "https://github.com/lifefossil/template-python.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
   # fastapi 模板
   fastapi:
     repository: "https://github.com/lifefossil/template-fastapi.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
   # pyside6 模板
   pyside6:
     repository: "https://github.com/lifefossil/template-pyside6.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
   # tkinter 模板
   tkinter:
     repository: "https://github.com/lifefossil/template-tkinter.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
   # Django + Tailwind 模板
   django-tailwind:
     repository: "https://github.com/lifefossil/template-django-tailwind.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
 
 # vue 项目
   # vue-tailwindcss
@@ -30,3 +40,11 @@ template:
   # electron 模板
   electron:
     repository: "https://github.com/lifefossil/template-electron.git"
+
+# react 项目
+  react-tailwindcss:
+    repository: "https://github.com/lifefossil/template-react-tailwindcss.git"
+
+# C++ 项目
+
+

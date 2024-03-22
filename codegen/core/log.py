@@ -1,5 +1,5 @@
 import logging
-from oliver_codegen.core.params import pyproject_toml_params
+from codegen.core.params import pyproject_toml_params
 
 """
 Python logging 模块, 主要包括四个组件:

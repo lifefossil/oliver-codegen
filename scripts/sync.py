@@ -33,7 +33,7 @@ class PyprojectTomlParams:
                 logging.warning("解析 pyproject.toml 参数失败, 将使用默认值.", e)
 
     def pyproject_to_config(self):
-        conf_pyproject_toml: Path = PROJECT_DIR/"oliver_codegen/conf/pyproject.toml"
+        conf_pyproject_toml: Path = PROJECT_DIR/"codegen/conf/pyproject.toml"
         with open(conf_pyproject_toml, "w", encoding="utf-8") as f:
             f.write('[project]\n')
             f.write(f'name = "{self.project_name}"\n')

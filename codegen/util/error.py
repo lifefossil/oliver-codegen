@@ -1,4 +1,4 @@
-from oliver_codegen.core.log import logger
+from codegen.core.log import logger
 
 
 def error_exit(msg: str, excp=None):

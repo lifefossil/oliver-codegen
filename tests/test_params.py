@@ -1,7 +1,8 @@
 import logging
 
-from oliver_codegen import pyproject_toml_params, PYPROJECT_TOML_PATH
 import tomllib
+
+from codegen.core.params import PYPROJECT_TOML_PATH, pyproject_toml_params
 
 
 class TestGetPyprojectTomlConfig:
@@ -24,7 +25,7 @@ class TestGetPyprojectTomlConfig:
 
 class TestPyprojectTomlParas:
     """
-    测试 oliver_codegen.core.params:PyprojectTomlParams 获得配置文件参数
+    测试 codegen.core.params:PyprojectTomlParams 获得配置文件参数
     """
 
     def test_pyproject_toml_paras(self):

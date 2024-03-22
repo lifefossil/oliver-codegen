@@ -1,7 +1,6 @@
 import shutil
 
-from oliver_codegen import PACKAGE_DIR
-
+from codegen.core.params import PACKAGE_DIR
 
 
 def test_remove_git_folder():
