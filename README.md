@@ -1,5 +1,5 @@
 # oliver-codegen 
-oliver-codegen 是一款快速构建项目基础框架的脚手架工具. 其原理是从 Github 下载对应模板到本地, 并没有什么魔法代码. 
+oliver-codegen 是从 Github 下载对应模板到本地的一个工具.
 
 
 ## 安装
@@ -34,40 +34,4 @@ $ pipx upgrade oliver-codegen
 ## 卸载程序
 ```bash
 $ pipx uninstall oliver-codegen
-```
-
-## 模板地址
-```yaml
-# 项目模板名称和存放地址映射表
-template:
-# Python 项目
-  # python 基本模板
-  python:
-    repository: "https://github.com/lifefossil/template-python.git"
-  # fastapi 模板
-  fastapi:
-    repository: "https://github.com/lifefossil/template-fastapi.git"
-  # pyside6 模板
-  pyside6:
-    repository: "https://github.com/lifefossil/template-pyside6.git"
-  # tkinter 模板
-  tkinter:
-    repository: "https://github.com/lifefossil/template-tkinter.git"
-  # Django + Tailwind 模板
-  django-tailwind:
-    repository: "https://github.com/lifefossil/template-django-tailwind.git"
-
-# vue 项目
-  # vue-tailwindcss
-  vue-tailwindcss:
-    repository: "https://github.com/lifefossil/template-vue-tailwindcss.git"
-  # vue-element-plus
-  vue-element-plus:
-    repository: "https://github.com/lifefossil/template-vue-element-plus.git"
-  # vitepress
-  vitepress:
-    repository: "https://github.com/lifefossil/template-vitepress.git"
-  # electron 模板
-  electron:
-    repository: "https://github.com/lifefossil/template-electron.git"
 ```

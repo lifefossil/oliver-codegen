@@ -25,7 +25,7 @@ pytest = "^8.0.0"
 
 # pytest 配置参数
 [tool.pytest.ini_options]
-pythonpath = "codegen"
+pythonpath = "."
 addopts = ["-v", "-s", "--import-mode=importlib"]
 
 

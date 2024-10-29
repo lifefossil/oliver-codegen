@@ -6,11 +6,6 @@ template:
     repository: "https://github.com/lifefossil/template-python.git"
     environment-tool: "poetry"
     project-name: "projectname"
-  # fastapi 模板
-  fastapi:
-    repository: "https://github.com/lifefossil/template-fastapi.git"
-    environment-tool: "poetry"
-    project-name: "projectname"
   # pyside6 模板
   pyside6:
     repository: "https://github.com/lifefossil/template-pyside6.git"
@@ -26,20 +21,12 @@ template:
     repository: "https://github.com/lifefossil/template-django-tailwind.git"
     environment-tool: "poetry"
     project-name: "projectname"
+  # Django + Bootstrap 模板
+  django-bootstrap:
+    repository: "https://github.com/lifefossil/template-django-bootstrap.git"
+    environment-tool: "poetry"
+    project-name: "projectname"
 
-# vue 项目
-  # vue-tailwindcss
-  vue-tailwindcss:
-    repository: "https://github.com/lifefossil/template-vue-tailwindcss.git"
-  # vue-element-plus
-  vue-element-plus:
-    repository: "https://github.com/lifefossil/template-vue-element-plus.git"
-  # vitepress
-  vitepress:
-    repository: "https://github.com/lifefossil/template-vitepress.git"
-  # electron 模板
-  electron:
-    repository: "https://github.com/lifefossil/template-electron.git"
 
 # react 项目
   react-tailwindcss:
